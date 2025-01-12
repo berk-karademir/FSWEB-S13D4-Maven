@@ -1,7 +1,12 @@
 package org.example;
 
 public enum Weapon {
-    SWORD(20 , 1.0), BOW(5, 2.5), THROWINGAXE(7, 2.0);
+    SWORD(15 , 1.25),
+    THROWINGAXE(5, 2.5),
+    CLEAVER(12, 1.5),
+    FIST(3,3.5),
+    STAFF(5,0.7);
+
     private int damage;
     private double attackSpeed;
 
@@ -12,11 +17,11 @@ public enum Weapon {
     }
     // getter methods
     public int getDamage() {
-        return damage;
+        return this.damage;
     }
 
     public double getAttackSpeed() {
-        return attackSpeed;
+        return this.attackSpeed;
     }
 
 }
